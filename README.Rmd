@@ -48,11 +48,14 @@ preservelabels(trial)
 
 
 trial <- attr(trial[['trt']], "label") <- NULL
+str(trial)
 
 
 # Restore back the labels
 
 trial <- restorelabels(trial, data_labels)
+str(trial)
+
 
 # Voila!
 ```
