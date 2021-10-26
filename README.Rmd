@@ -47,7 +47,7 @@ preservelabels(trial)
 # Example: Drop the label for trt  
 
 
-trial <- attr(trial[['trt']], "label") <- NULL
+attr(trial[["trt"]], "label") <- NULL
 str(trial)
 
 
