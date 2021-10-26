@@ -1,0 +1,59 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# labelspreserve
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+Whenever we perform some manipulations on a tibble with some variable labels, we tend to lose those attributes. Some times it may be pain to re-write the variables again. This package answers that question by preserving the variable labels before you perform such actions then you can restore those labels. 
+
+## Installation
+
+You can install the released version of labelspreserve like so:
+``` r
+devtools::install_github("mosesotieno/labelspreserve")
+```
+
+
+## Quick demo
+
+Preserving and restoring variables with `labelspreserve`
+
+```{r example}
+library(labelspreserve)
+
+# Load a dataset with variable labels
+
+trial <- gtsummary::trial
+
+# We first begin by preserving the variables 
+
+preservelabels(trial)
+
+# Computations and manipulations
+# Example: Drop the label for trt  
+
+
+trial <- attr(trial[['trt']], "label") <- NULL
+
+
+# Restore back the labels
+
+trial <- restorelabels(trial, data_labels)
+
+# Voila!
+```
+
