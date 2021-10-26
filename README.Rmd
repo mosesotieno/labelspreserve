@@ -2,7 +2,6 @@
 output: github_document
 ---
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
@@ -14,9 +13,6 @@ knitr::opts_chunk$set(
 ```
 
 # labelspreserve
-
-<!-- badges: start -->
-<!-- badges: end -->
 
 Whenever we perform some manipulations on a tibble with some variable labels, we tend to lose those attributes. Some times it may be pain to re-write the variables again. This package answers that question by preserving the variable labels before you perform such actions then you can restore those labels. 
 

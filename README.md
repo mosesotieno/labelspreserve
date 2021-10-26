@@ -1,10 +1,5 @@
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-
 # labelspreserve
-
-<!-- badges: start -->
-<!-- badges: end -->
 
 Whenever we perform some manipulations on a tibble with some variable
 labels, we tend to lose those attributes. Some times it may be pain to
