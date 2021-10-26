@@ -1,0 +1,17 @@
+Package: labelspreserve
+Title: Preserve the variable labels
+Version: 0.0.0.9000
+Authors@R: 
+    person("Moses", "Otieno", , "mosotieno@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-9977-8220"))
+Description: This package preserves and restores the variable labels in a
+             given datase. Some functions in R drops the variable
+             labels so there is need to preserve then restore the variable
+             labels. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Depends: 
+    R (>= 2.10)
